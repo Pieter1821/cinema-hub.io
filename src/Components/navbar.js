@@ -11,7 +11,7 @@ const Navbar = ({searchText, setSearchText}) => {
     
   }
   return (
-    <nav className="navbar navbar-dark navbar-expand-lg bg-light">
+    <nav className="navbar navbar-dark navbar-expand-lg bg-dark text-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           CINEMA-HUB

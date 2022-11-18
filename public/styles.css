@@ -1,0 +1,22 @@
+.Responsive {
+    background-color: beige;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    width: 75%;
+    background-color: green;
+    
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    width: 50%;
+    background-color: red;
+    
+}
