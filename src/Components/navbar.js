@@ -2,6 +2,7 @@ import React from "react";
 import { useHistory,Link } from "react-router-dom";
 import SearchView from "./SearchView";
 
+
 const Navbar = ({searchText, setSearchText}) => {
   const history = useHistory()
 

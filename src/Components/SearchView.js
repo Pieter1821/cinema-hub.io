@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Hero from "./Hero";
 
@@ -6,6 +6,12 @@ const MovieCard = ({ movie }) => {
   const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
 
   const detailUrl = `/movies/${movie.id}`;
+  const [Image, setImage] = useState(posterUrl);
+  if(Image === "https://image.tmdb.org/t/p/w500null") {
+    setImage(
+      "https://user-images.githubusercontent.com/582516/98960633-6c6a1600-24e3-11eb-89f1-045f55a1e494.png"
+    )
+  }
   return (
     <div className="col-lg-3 col-md-3 col-2 my-4">
       <div className="card">
@@ -17,7 +23,7 @@ const MovieCard = ({ movie }) => {
         <div className="card-body">
           <h5 className="card-title">{movie.original_title}</h5>
           <p> 
-            Unfortunately no details found for current MovieCard
+            
           </p>
           <Link to={detailUrl} className="btn btn-primary">
             Show details
@@ -58,7 +64,7 @@ const SearchView = ({ keyword, searchResults }) => {
 
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 offset-lg-2 my-5">
+            <div className="fs-2 d-flex justify-content-center mt-4 ">
               <h3>Please input a search parameter</h3>
 
             </div>
