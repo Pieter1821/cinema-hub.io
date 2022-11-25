@@ -53,26 +53,7 @@ const SearchView = ({ keyword, searchResults }) => {
           <div className="row">{resultsHtml}</div>
         </div>
       )}
-       <div className="container">
-          <div className="row">
-            <div className="col-lg-8 offset-lg-2 my-5">
-              <h3>NO MOVIES FOUND</h3>
-
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="row">
-            <div className="fs-2 d-flex justify-content-center mt-4 ">
-              <h3>Please input a search parameter</h3>
-
-            </div>
-          </div>
-        </div>
-
-
-      
+     
     </>
   );
 };

@@ -21,3 +21,10 @@ only screen and (min-width: 768px) {
     background-color: red;
     
 }
+
+
+
+.card-img-top{
+    width: 1000px;
+    height: 1000px;
+}
