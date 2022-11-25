@@ -25,16 +25,14 @@
 }
 
 .container {
-    display: grid;
-    grid-auto-rows: minmax(100px,auto);
-    flex-wrap: wrap;
-    flex-grow: 1;
-    align-self: center;
-    gap: 20px;
-    float: right;
-    margin-left: 0%;
-    justify-content: center;
-    box-shadow: darkgray;
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+justify-content: space-around;
+flex-flow: wrap;
+text-align: start;
+padding: 2px 14px;
     
 
     
@@ -46,9 +44,10 @@
 
 @media  only screen and (max-width:800px) {
   body {
- 
+    height: 100%;
     overflow: hidden;
     width: 700px;
+
 
  
     
@@ -57,6 +56,28 @@
     }
     
 }
+
+
+
+@media screen and (max-width:1200px) {
+    .container{
+        width: 40%;
+
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 90%;
+ 
+
+     
+    }
+}
+
+
+
 
 
 
