@@ -27,11 +27,15 @@
 .container {
 display: flex;
 flex-direction: column;
-width: 100%;
 height: auto;
-justify-content: space-around;
-flex-flow: wrap;
-text-align: start;
+
+align-items: stretch;
+
+padding: 10px;
+align-self: flex-start;
+flex-basis: 700px;
+flex-shrink: 0;
+
 
     
 
@@ -44,9 +48,10 @@ text-align: start;
 
 @media  only screen and (max-width:800px) {
   body {
-    height: 100%;
-    overflow: hidden;
-    width: 750px;
+    height: auto;
+
+    width: 700px;
+
 
 
  
